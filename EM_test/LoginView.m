@@ -21,7 +21,7 @@
 
 - (IBAction)loginAction:(id)sender {
     
-    [[EMClient sharedClient] addDelegate:self delegateQueue:nil];
+//    [[EMClient sharedClient] addDelegate:self delegateQueue:nil];
     
     EMError *error = [[EMClient sharedClient] loginWithUsername:_Username.text password:_password.text];
     NSLog(@"%@",error.errorDescription);

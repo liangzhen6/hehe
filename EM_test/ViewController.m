@@ -11,8 +11,10 @@
 #import "LoginView.h"
 #import "RegisterView.h"
 #import "AddFriendsViewController.h"
-@interface ViewController ()<EMClientDelegate,UIAlertViewDelegate,EMContactManagerDelegate>
+@interface ViewController ()<EMClientDelegate,UIAlertViewDelegate,EMContactManagerDelegate,EMChatManagerDelegate>
 @property(nonatomic,copy)NSString *friends;
+
+
 @end
 
 @implementation ViewController
@@ -22,8 +24,8 @@
 //    [self registron];
 // Do any additional setup after loading the view, typically from a nib.
     [[EMClient sharedClient].contactManager addDelegate:self delegateQueue:nil];
-    //移除好友回调
-//    [[EMClient sharedClient].contactManager removeDelegate:self];
+    //注册消息回调
+    [[EMClient sharedClient].chatManager addDelegate:self delegateQueue:nil];
     UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithTitle:@"add" style:UIBarButtonItemStylePlain target:self action:@selector(showAddFriendsView)];
     
 //    item.style =UIBarButtonSystemItemAdd;
@@ -147,6 +149,40 @@
 
 }
 
+
+#pragma mark    消息
+/*!
+ @method
+ @brief 接收到一条及以上非cmd消息
+ */
+- (void)didReceiveMessages:(NSArray *)aMessages{
+
+    NSLog(@"----%@#",aMessages);
+
+}
+
+/*!
+ @method
+ @brief 接收到一条及以上cmd消息
+ */
+- (void)didReceiveCmdMessages:(NSArray *)aCmdMessages{
+     NSLog(@"----%@#",aCmdMessages);
+    
+
+}
+/**
+ *  重写dealloc；
+ */
+- (void)dealloc{
+    
+    //移除好友回调
+   [[EMClient sharedClient].contactManager removeDelegate:self];
+    
+    //移除消息回调
+    [[EMClient sharedClient].chatManager removeDelegate:self];
+
+
+}
 
 
 - (void)didReceiveMemoryWarning {

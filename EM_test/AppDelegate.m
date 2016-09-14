@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import <EMSDK.h>
+
+#import "EaseUI/EaseUI.h"
+#define appKey @"7215217758991#emtest"
+#define apnsCert @"istore_dev"
 @interface AppDelegate ()
 
 @end
@@ -19,10 +23,12 @@
     NSLog(@"%@---",application);
     //AppKey:注册的AppKey，详细见下面注释。
     //apnsCertName:推送证书名（不需要加后缀），详细见下面注释。
-    EMOptions *options = [EMOptions optionsWithAppkey:@"7215217758991#emtest"];
-    options.apnsCertName = @"istore_dev";
+    EMOptions *options = [EMOptions optionsWithAppkey:appKey];
+    options.apnsCertName = apnsCert;
     [[EMClient sharedClient] initializeSDKWithOptions:options];
 
+ 
+    [[EaseSDKHelper shareHelper] easemobApplication:application didFinishLaunchingWithOptions:launchOptions appkey:appKey apnsCertName:apnsCert otherConfig:@{kSDKConfigEnableConsoleLogger:[NSNumber numberWithBool:YES]}];
     // Override point for customization after application launch.
     return YES;
 }
