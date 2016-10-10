@@ -10,6 +10,8 @@
 		665DB2E5FEE4D292E1745F05 /* libPods-EM_testUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BA81608B2C0B3070D20547 /* libPods-EM_testUITests.a */; };
 		84368E55AC17BC6DBA71F69D /* libPods-EM_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B7F24301815FE906654DC9B /* libPods-EM_test.a */; };
 		C287CF73EE18F28248C3896B /* libPods-EM_testTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 379521F46B1E60A208FC3C97 /* libPods-EM_testTests.a */; };
+		FA18F9521DAB7D7300639059 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA18F9511DAB7D7300639059 /* UserNotifications.framework */; };
+		FA18F9541DABA17000639059 /* jump_icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = FA18F9531DABA17000639059 /* jump_icon-60.png */; };
 		FA2E49781D82593900F9E68F /* FriendsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2E49761D82593900F9E68F /* FriendsTableViewCell.m */; };
 		FA2E49791D82593900F9E68F /* FriendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2E49771D82593900F9E68F /* FriendsTableViewCell.xib */; };
 		FA2E497D1D825B0C00F9E68F /* FriendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2E497C1D825B0C00F9E68F /* FriendsModel.m */; };
@@ -246,6 +248,8 @@
 		AF874F39C691F9EE32AB6B94 /* Pods-EM_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EM_testTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EM_testTests/Pods-EM_testTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB5F41CF6AD840FF5E1BEF91 /* Pods-EM_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EM_testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EM_testTests/Pods-EM_testTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E56DC5F6AB946A534EFA4770 /* Pods-EM_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EM_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-EM_test/Pods-EM_test.release.xcconfig"; sourceTree = "<group>"; };
+		FA18F9511DAB7D7300639059 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		FA18F9531DABA17000639059 /* jump_icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jump_icon-60.png"; sourceTree = "<group>"; };
 		FA2E49751D82593900F9E68F /* FriendsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTableViewCell.h; sourceTree = "<group>"; };
 		FA2E49761D82593900F9E68F /* FriendsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewCell.m; sourceTree = "<group>"; };
 		FA2E49771D82593900F9E68F /* FriendsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsTableViewCell.xib; sourceTree = "<group>"; };
@@ -285,6 +289,7 @@
 		FABB3D551D800A3E00D97797 /* AddFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendsViewController.h; sourceTree = "<group>"; };
 		FABB3D561D800A3E00D97797 /* AddFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendsViewController.m; sourceTree = "<group>"; };
 		FABB3D571D800A3E00D97797 /* AddFriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddFriendsViewController.xib; sourceTree = "<group>"; };
+		FADE10DA1DAA51F800C43503 /* EM_test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EM_test.entitlements; sourceTree = "<group>"; };
 		FAFCB2911D88FCFB00D6BCDF /* EaseUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseUI.h; sourceTree = "<group>"; };
 		FAFCB2921D88FCFB00D6BCDF /* EaseUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseUI.m; sourceTree = "<group>"; };
 		FAFCB2931D88FCFB00D6BCDF /* EaseUIResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EaseUIResource.bundle; sourceTree = "<group>"; };
@@ -613,6 +618,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA18F9521DAB7D7300639059 /* UserNotifications.framework in Frameworks */,
 				84368E55AC17BC6DBA71F69D /* libPods-EM_test.a in Frameworks */,
 				FAFCB40D1D88FCFB00D6BCDF /* libopencore-amrwb.a in Frameworks */,
 				FAFCB40C1D88FCFB00D6BCDF /* libopencore-amrnb.a in Frameworks */,
@@ -641,6 +647,7 @@
 		6811C838E461294CE55F2F6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA18F9511DAB7D7300639059 /* UserNotifications.framework */,
 				4B7F24301815FE906654DC9B /* libPods-EM_test.a */,
 				379521F46B1E60A208FC3C97 /* libPods-EM_testTests.a */,
 				A7BA81608B2C0B3070D20547 /* libPods-EM_testUITests.a */,
@@ -716,6 +723,7 @@
 		FA3A46471D7D5ADF0015C8AA /* EM_test */ = {
 			isa = PBXGroup;
 			children = (
+				FADE10DA1DAA51F800C43503 /* EM_test.entitlements */,
 				FAFCB28F1D88FCFB00D6BCDF /* EaseUI */,
 				FA3A464B1D7D5ADF0015C8AA /* AppDelegate.h */,
 				FA3A464C1D7D5ADF0015C8AA /* AppDelegate.m */,
@@ -731,6 +739,7 @@
 				FA3A46541D7D5ADF0015C8AA /* Assets.xcassets */,
 				FA3A46561D7D5ADF0015C8AA /* LaunchScreen.storyboard */,
 				FA3A46591D7D5ADF0015C8AA /* Info.plist */,
+				FA18F9531DABA17000639059 /* jump_icon-60.png */,
 				FA3A46481D7D5ADF0015C8AA /* Supporting Files */,
 			);
 			path = EM_test;
@@ -1551,6 +1560,15 @@
 				TargetAttributes = {
 					FA3A46441D7D5ADF0015C8AA = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = G4E6298X77;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					FA3A465D1D7D5ADF0015C8AA = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1646,6 +1664,7 @@
 				FAFCB47C1D88FCFB00D6BCDF /* chatBar_colorMore_audioCall@2x.png in Resources */,
 				FAFCB47B1D88FCFB00D6BCDF /* chat_location_preview@2x.png in Resources */,
 				FAFCB4A01D88FCFB00D6BCDF /* VoiceSearchFeedback002@2x.png in Resources */,
+				FA18F9541DABA17000639059 /* jump_icon-60.png in Resources */,
 				FAFCB49E1D88FCFB00D6BCDF /* chat_receiver_bg@2x.png in Resources */,
 				FAFCB4921D88FCFB00D6BCDF /* faceDelete@2x.png in Resources */,
 				FAFCB4781D88FCFB00D6BCDF /* in.caf in Resources */,
@@ -2090,8 +2109,10 @@
 			baseConfigurationReference = 36F9D041791CC682F142902B /* Pods-EM_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EM_test/EM_test.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Leonard Chan (H55RR3L9GN)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Leonard Chan (H55RR3L9GN)";
+				DEVELOPMENT_TEAM = G4E6298X77;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EM_test/EMPch.pch";
 				INFOPLIST_FILE = EM_test/Info.plist;
@@ -2107,6 +2128,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SH.EMtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ea1263cf-aa7d-4980-977d-76762caca976";
+				PROVISIONING_PROFILE_SPECIFIER = EM_Push;
 			};
 			name = Debug;
 		};
@@ -2115,8 +2137,10 @@
 			baseConfigurationReference = E56DC5F6AB946A534EFA4770 /* Pods-EM_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EM_test/EM_test.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Leonard Chan (H55RR3L9GN)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Leonard Chan (H55RR3L9GN)";
+				DEVELOPMENT_TEAM = G4E6298X77;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EM_test/EMPch.pch";
 				INFOPLIST_FILE = EM_test/Info.plist;
@@ -2132,6 +2156,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SH.EMtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ea1263cf-aa7d-4980-977d-76762caca976";
+				PROVISIONING_PROFILE_SPECIFIER = EM_Push;
 			};
 			name = Release;
 		};

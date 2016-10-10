@@ -16,71 +16,71 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B9A36DC3E3D25883B1691EE12535053 /* EMContactManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMContactManagerDelegate.h; path = HyphenateFullSDK/include/EMContactManagerDelegate.h; sourceTree = "<group>"; };
-		0BBEDDDFEA59FF41157B8CA9D02056F0 /* EMFileMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMFileMessageBody.h; path = HyphenateFullSDK/include/EMFileMessageBody.h; sourceTree = "<group>"; };
+		02B333D1718DC1EB10B947F9B6EDD037 /* EMCursorResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMCursorResult.h; path = HyphenateFullSDK/include/EMCursorResult.h; sourceTree = "<group>"; };
+		0544E9C36C358F3E38997289D3787838 /* EMErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMErrorCode.h; path = HyphenateFullSDK/include/EMErrorCode.h; sourceTree = "<group>"; };
+		0CF3D72C61518B6DF522AD6A701E4F0F /* EMMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMMessage.h; path = HyphenateFullSDK/include/EMMessage.h; sourceTree = "<group>"; };
 		0EDFF0AD59AFE5550CE651AC612CF062 /* Pods-EM_test-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EM_test-frameworks.sh"; sourceTree = "<group>"; };
 		13B075ADFCA64FBC4600D5236097492C /* Pods-EM_testTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EM_testTests-dummy.m"; sourceTree = "<group>"; };
 		140A544994921BE3D69E267110817A85 /* Pods-EM_test-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EM_test-acknowledgements.plist"; sourceTree = "<group>"; };
-		18032CBC713BA0270ED2C989A787F2AE /* EMCallRemoteView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMCallRemoteView.h; path = HyphenateFullSDK/include/EMCallRemoteView.h; sourceTree = "<group>"; };
 		1AFC95B27A4391322B9B55888DEC484B /* Pods-EM_testUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EM_testUITests-resources.sh"; sourceTree = "<group>"; };
-		1B033E6593CAAD72DC2C2F12B45A4E84 /* EMSDKFull.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMSDKFull.h; path = HyphenateFullSDK/include/EMSDKFull.h; sourceTree = "<group>"; };
-		1FCCF5AA52749F7838FBA51B282ED121 /* EMTextMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMTextMessageBody.h; path = HyphenateFullSDK/include/EMTextMessageBody.h; sourceTree = "<group>"; };
+		1F22C79FAE15C214C2AF106A95602CEF /* EMVideoMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMVideoMessageBody.h; path = HyphenateFullSDK/include/EMVideoMessageBody.h; sourceTree = "<group>"; };
+		1F27529E771A978C844727DADE372A23 /* EMError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMError.h; path = HyphenateFullSDK/include/EMError.h; sourceTree = "<group>"; };
+		221DA09BDAAD521CEB0D8E299116ED82 /* EMMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMMessageBody.h; path = HyphenateFullSDK/include/EMMessageBody.h; sourceTree = "<group>"; };
 		238D7AE4F853DBC9D53CC557572950C2 /* libPods-EM_test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EM_test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		26A713B0447BC189749AB5E79171E973 /* EMCursorResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMCursorResult.h; path = HyphenateFullSDK/include/EMCursorResult.h; sourceTree = "<group>"; };
-		29E021F23FDC202D7EFD0F1F2B70D0C0 /* IEMCallManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IEMCallManager.h; path = HyphenateFullSDK/include/IEMCallManager.h; sourceTree = "<group>"; };
 		2C4365B69F4155BF9A1772494C837CEA /* Pods-EM_test-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EM_test-resources.sh"; sourceTree = "<group>"; };
-		334D760A4848EE1A0C8CFCA21D2AD34E /* IEMChatManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IEMChatManager.h; path = HyphenateFullSDK/include/IEMChatManager.h; sourceTree = "<group>"; };
+		2D2EB5CB62EB11E207E287DECEFC7876 /* EMChatManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMChatManagerDelegate.h; path = HyphenateFullSDK/include/EMChatManagerDelegate.h; sourceTree = "<group>"; };
 		369CFA1425F21D8EE9CF605771DDC9C2 /* Pods-EM_test-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EM_test-acknowledgements.markdown"; sourceTree = "<group>"; };
 		37EFA7DAF2839F722DBF8EB4ACD83C56 /* Pods-EM_testUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EM_testUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3CA00B1E0EAAAD578D9D71CE32E6CB65 /* EMClient+Call.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EMClient+Call.h"; path = "HyphenateFullSDK/include/EMClient+Call.h"; sourceTree = "<group>"; };
-		3FF9DFFA20FC1506B903FDA5D473A067 /* OpenGLView20.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OpenGLView20.h; path = HyphenateFullSDK/include/OpenGLView20.h; sourceTree = "<group>"; };
-		401FA5109F82A60E09444C0EEB305CAD /* EMOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMOptions.h; path = HyphenateFullSDK/include/EMOptions.h; sourceTree = "<group>"; };
+		4306085BE2A887ADB7F16B02869A6248 /* IEMChatManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IEMChatManager.h; path = HyphenateFullSDK/include/IEMChatManager.h; sourceTree = "<group>"; };
+		45009D34C9803C1F22E696F0A3D195E3 /* EMCmdMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMCmdMessageBody.h; path = HyphenateFullSDK/include/EMCmdMessageBody.h; sourceTree = "<group>"; };
 		47FDE6BB320B29CFDB535F19C7F956E3 /* Pods-EM_testUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EM_testUITests-frameworks.sh"; sourceTree = "<group>"; };
 		4802B0B43AFE2C33D3336BF7974CAEDA /* Pods-EM_testTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EM_testTests-resources.sh"; sourceTree = "<group>"; };
+		4C98B766C62ED933FAE8A5C64627D998 /* OpenGLView20.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OpenGLView20.h; path = HyphenateFullSDK/include/OpenGLView20.h; sourceTree = "<group>"; };
 		527BD64959B9BE756956FCC8CA9729D5 /* libPods-EM_testTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EM_testTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A6BE56DF58CB1787D5B995DC1EDE89D /* EMSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMSDK.h; path = HyphenateFullSDK/include/EMSDK.h; sourceTree = "<group>"; };
-		5CCCE93BF37FFE6A6C1B3241821B12A3 /* EMConversation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMConversation.h; path = HyphenateFullSDK/include/EMConversation.h; sourceTree = "<group>"; };
-		6012A2A1E0B0F088A0DF28CEB1613FA0 /* EMChatroom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMChatroom.h; path = HyphenateFullSDK/include/EMChatroom.h; sourceTree = "<group>"; };
-		628F46F5422C00AB2165058BC493EB06 /* libHyphenateFullSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libHyphenateFullSDK.a; path = HyphenateFullSDK/lib/libHyphenateFullSDK.a; sourceTree = "<group>"; };
 		635EF39CDA1FB23B501E8C8725ED2E3C /* Pods-EM_test-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EM_test-dummy.m"; sourceTree = "<group>"; };
-		654D733F4556AE62092306529803FED6 /* EMGroupOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMGroupOptions.h; path = HyphenateFullSDK/include/EMGroupOptions.h; sourceTree = "<group>"; };
-		673D23D2FD4E36F00BB9B0F44E1E9256 /* EMClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMClient.h; path = HyphenateFullSDK/include/EMClient.h; sourceTree = "<group>"; };
-		6823C9B83E9AA9E2A2A08A2BDF802566 /* EMChatroomManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMChatroomManagerDelegate.h; path = HyphenateFullSDK/include/EMChatroomManagerDelegate.h; sourceTree = "<group>"; };
-		6C5539F4C89856366B9CF4A2112F3E69 /* EMChatManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMChatManagerDelegate.h; path = HyphenateFullSDK/include/EMChatManagerDelegate.h; sourceTree = "<group>"; };
-		7A04DA7AC3AF593DBD13F1A02B4BD284 /* EMLocationMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMLocationMessageBody.h; path = HyphenateFullSDK/include/EMLocationMessageBody.h; sourceTree = "<group>"; };
+		68EBE5AEE812B5E73D42EA5381E82DC4 /* EMOptions+PrivateDeploy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EMOptions+PrivateDeploy.h"; path = "HyphenateFullSDK/include/EMOptions+PrivateDeploy.h"; sourceTree = "<group>"; };
+		69108B18E4A49375EB4CAA364065CB87 /* EMCallRemoteView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMCallRemoteView.h; path = HyphenateFullSDK/include/EMCallRemoteView.h; sourceTree = "<group>"; };
+		7127B425153894E7109E608ADEE127D9 /* EMSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMSDK.h; path = HyphenateFullSDK/include/EMSDK.h; sourceTree = "<group>"; };
+		795B8000F7819FC904699907A2D01B7C /* EMVoiceMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMVoiceMessageBody.h; path = HyphenateFullSDK/include/EMVoiceMessageBody.h; sourceTree = "<group>"; };
 		7A0B82FE53E8DB78A5E8C19D747605FA /* Pods-EM_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EM_test.release.xcconfig"; sourceTree = "<group>"; };
+		7BBDD74642D9A67088988224B2EDFEB9 /* EMGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMGroup.h; path = HyphenateFullSDK/include/EMGroup.h; sourceTree = "<group>"; };
 		7BFD0F075444C8009DA141CDB195C4CA /* Pods-EM_testTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EM_testTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7C06203E5A6D1DBA89E8861A6460AFCF /* EMErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMErrorCode.h; path = HyphenateFullSDK/include/EMErrorCode.h; sourceTree = "<group>"; };
+		7C5AF8658A7D6841DCC20C7FD9902CB5 /* EMImageMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMImageMessageBody.h; path = HyphenateFullSDK/include/EMImageMessageBody.h; sourceTree = "<group>"; };
 		7D513FDD84635B2FF0CC952E66BF4BFC /* libPods-EM_testUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EM_testUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F8724C135363D012334E6E05418B441 /* EMMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMMessage.h; path = HyphenateFullSDK/include/EMMessage.h; sourceTree = "<group>"; };
+		828598CD5453C00DBD039B044617C408 /* EMChatroomManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMChatroomManagerDelegate.h; path = HyphenateFullSDK/include/EMChatroomManagerDelegate.h; sourceTree = "<group>"; };
+		8728CBCD3494C7BA26716B9A88BD2834 /* EMTextMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMTextMessageBody.h; path = HyphenateFullSDK/include/EMTextMessageBody.h; sourceTree = "<group>"; };
+		8B6334C52E18EEC4639D3806F92CF3C3 /* EMGroupOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMGroupOptions.h; path = HyphenateFullSDK/include/EMGroupOptions.h; sourceTree = "<group>"; };
+		8E76FDE0117157CBD6F8610A902F3BD6 /* EMCallManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMCallManagerDelegate.h; path = HyphenateFullSDK/include/EMCallManagerDelegate.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9586670018B95A51D7EFBF448AF5DE1D /* EMPushOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMPushOptions.h; path = HyphenateFullSDK/include/EMPushOptions.h; sourceTree = "<group>"; };
 		98056153FBFA6D10E715818C8E9670D5 /* Pods-EM_testTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EM_testTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		99A558AC33E654EB80CD9221E7821188 /* EMCallSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMCallSession.h; path = HyphenateFullSDK/include/EMCallSession.h; sourceTree = "<group>"; };
+		992B15C6CD9E580B1B1D1EF8F7ED2FBC /* IEMContactManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IEMContactManager.h; path = HyphenateFullSDK/include/IEMContactManager.h; sourceTree = "<group>"; };
+		9C1B11281956BCCAECF95A1EFCF9A184 /* EMCallSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMCallSession.h; path = HyphenateFullSDK/include/EMCallSession.h; sourceTree = "<group>"; };
 		9E9EC5C119A8E596051FFBB06B45C9A3 /* Pods-EM_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EM_testTests.release.xcconfig"; sourceTree = "<group>"; };
-		9F834787268FB584367442E66E393356 /* IEMChatroomManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IEMChatroomManager.h; path = HyphenateFullSDK/include/IEMChatroomManager.h; sourceTree = "<group>"; };
-		A94BEFDE4FF0FBC26E14E2D132BC546D /* EMGroupManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMGroupManagerDelegate.h; path = HyphenateFullSDK/include/EMGroupManagerDelegate.h; sourceTree = "<group>"; };
-		B58C9349412E1868FA8463575F18E61D /* EMGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMGroup.h; path = HyphenateFullSDK/include/EMGroup.h; sourceTree = "<group>"; };
-		B73DFD3F70C6985163D0478A3CEC664F /* EMVideoMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMVideoMessageBody.h; path = HyphenateFullSDK/include/EMVideoMessageBody.h; sourceTree = "<group>"; };
-		B7F929E5073D1998C22B20ED07DC7253 /* EMOptions+PrivateDeploy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EMOptions+PrivateDeploy.h"; path = "HyphenateFullSDK/include/EMOptions+PrivateDeploy.h"; sourceTree = "<group>"; };
+		A384C576DE1C17CE7C6DFC69DA018D9B /* EMClient+Call.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EMClient+Call.h"; path = "HyphenateFullSDK/include/EMClient+Call.h"; sourceTree = "<group>"; };
+		A54F653707D5CB9C6803BC421000BBD5 /* IEMCallManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IEMCallManager.h; path = HyphenateFullSDK/include/IEMCallManager.h; sourceTree = "<group>"; };
+		A82EB18B6C97779326BBFA1A50FD94E8 /* EMConversation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMConversation.h; path = HyphenateFullSDK/include/EMConversation.h; sourceTree = "<group>"; };
+		A842B708157A241599260DA1D532FE8F /* EMOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMOptions.h; path = HyphenateFullSDK/include/EMOptions.h; sourceTree = "<group>"; };
+		ABD1481FA63A2E746F7B5492D9C6F903 /* EMSDKFull.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMSDKFull.h; path = HyphenateFullSDK/include/EMSDKFull.h; sourceTree = "<group>"; };
+		AF87FF2072A4C81E529BC04109FFA1F5 /* EMGroupManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMGroupManagerDelegate.h; path = HyphenateFullSDK/include/EMGroupManagerDelegate.h; sourceTree = "<group>"; };
+		B38460B90384DBC480A3F46BC6C77733 /* EMClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMClient.h; path = HyphenateFullSDK/include/EMClient.h; sourceTree = "<group>"; };
+		B410DE8399F6BE4C76DC87B7F723A868 /* IEMChatroomManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IEMChatroomManager.h; path = HyphenateFullSDK/include/IEMChatroomManager.h; sourceTree = "<group>"; };
 		BFA3B216DBC773DD193C5A5C416CD4FC /* Pods-EM_testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EM_testUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C2C97DD79DD309EF93CA22C054B4D714 /* EMCallLocalView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMCallLocalView.h; path = HyphenateFullSDK/include/EMCallLocalView.h; sourceTree = "<group>"; };
 		C5431CA90BCFF0FF771D9EA72865F866 /* Pods-EM_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EM_test.debug.xcconfig"; sourceTree = "<group>"; };
-		CD7B041C344EACA1FF015E6F7213B9D1 /* EMVoiceMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMVoiceMessageBody.h; path = HyphenateFullSDK/include/EMVoiceMessageBody.h; sourceTree = "<group>"; };
+		C8426F44B0D34997E8E82BCB5667BF09 /* EMClientDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMClientDelegate.h; path = HyphenateFullSDK/include/EMClientDelegate.h; sourceTree = "<group>"; };
+		CA97533505EA9C21C69AE69DFEE3819D /* EMLocationMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMLocationMessageBody.h; path = HyphenateFullSDK/include/EMLocationMessageBody.h; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D277E02ED778F0CAE51F51D855D785BB /* IEMGroupManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IEMGroupManager.h; path = HyphenateFullSDK/include/IEMGroupManager.h; sourceTree = "<group>"; };
+		D248D7BE92420B5E704FB7829A66AFBB /* EMContactManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMContactManagerDelegate.h; path = HyphenateFullSDK/include/EMContactManagerDelegate.h; sourceTree = "<group>"; };
 		D5596C59C6A8E5594C1A356305ABEC32 /* Pods-EM_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EM_testTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D81AD117C78F72B4F5AC61B01F5571A6 /* EMCallLocalView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMCallLocalView.h; path = HyphenateFullSDK/include/EMCallLocalView.h; sourceTree = "<group>"; };
+		D770C150C1048F82F7ACEE01C58F80B2 /* EMFileMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMFileMessageBody.h; path = HyphenateFullSDK/include/EMFileMessageBody.h; sourceTree = "<group>"; };
+		D8899D4156EF2462961CA57E0CF17E8C /* libHyphenateFullSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libHyphenateFullSDK.a; path = HyphenateFullSDK/lib/libHyphenateFullSDK.a; sourceTree = "<group>"; };
+		D9661958EB9B3C218EA70B2477AE969A /* IEMGroupManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IEMGroupManager.h; path = HyphenateFullSDK/include/IEMGroupManager.h; sourceTree = "<group>"; };
 		D9DF11225665F86730EF9993D5B550B2 /* Pods-EM_testTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EM_testTests-frameworks.sh"; sourceTree = "<group>"; };
-		DA41F1D8BA22103BA8BF5EA142E5F14E /* EMPushOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMPushOptions.h; path = HyphenateFullSDK/include/EMPushOptions.h; sourceTree = "<group>"; };
 		DB7DB65F7F346295A1AC0B0188BAE0BB /* Pods-EM_testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EM_testUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E075C4D868D74EF0245E332B7DBEA453 /* EMClientDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMClientDelegate.h; path = HyphenateFullSDK/include/EMClientDelegate.h; sourceTree = "<group>"; };
-		E4C13D937911AB4A0C0ADCF67E75AA2A /* EMCallManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMCallManagerDelegate.h; path = HyphenateFullSDK/include/EMCallManagerDelegate.h; sourceTree = "<group>"; };
-		E644CDE6A0F1C6D5F5156F85BE811D8E /* EMError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMError.h; path = HyphenateFullSDK/include/EMError.h; sourceTree = "<group>"; };
-		EE1C7AF43050DAA0A4A6022C8F631A49 /* EMImageMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMImageMessageBody.h; path = HyphenateFullSDK/include/EMImageMessageBody.h; sourceTree = "<group>"; };
-		EF879C0AE9A0E969A7AE5574FAEF4A1C /* IEMContactManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IEMContactManager.h; path = HyphenateFullSDK/include/IEMContactManager.h; sourceTree = "<group>"; };
-		F44A80503C5DA7A4083CE42ACBA660B0 /* EMCmdMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMCmdMessageBody.h; path = HyphenateFullSDK/include/EMCmdMessageBody.h; sourceTree = "<group>"; };
+		E12283C60D17D11C81BE4547CD5A01DE /* EMChatroom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMChatroom.h; path = HyphenateFullSDK/include/EMChatroom.h; sourceTree = "<group>"; };
 		F6556BAB68039A74DB5AA1EBA09133C8 /* Pods-EM_testUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EM_testUITests-dummy.m"; sourceTree = "<group>"; };
 		F76084186F2564325ED2250FDE40A1E5 /* Pods-EM_testUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EM_testUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FA3AE951F014023B76D9EDFDE04D3DBD /* EMMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMMessageBody.h; path = HyphenateFullSDK/include/EMMessageBody.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,50 +126,12 @@
 			path = "Target Support Files/Pods-EM_testTests";
 			sourceTree = "<group>";
 		};
-		296E3FE3F6BBBC8A64F0A6D769F91E6B /* HyphenateFullSDK */ = {
+		321347D70A2D6113D2B568B202AE7EEC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D81AD117C78F72B4F5AC61B01F5571A6 /* EMCallLocalView.h */,
-				E4C13D937911AB4A0C0ADCF67E75AA2A /* EMCallManagerDelegate.h */,
-				18032CBC713BA0270ED2C989A787F2AE /* EMCallRemoteView.h */,
-				99A558AC33E654EB80CD9221E7821188 /* EMCallSession.h */,
-				6C5539F4C89856366B9CF4A2112F3E69 /* EMChatManagerDelegate.h */,
-				6012A2A1E0B0F088A0DF28CEB1613FA0 /* EMChatroom.h */,
-				6823C9B83E9AA9E2A2A08A2BDF802566 /* EMChatroomManagerDelegate.h */,
-				673D23D2FD4E36F00BB9B0F44E1E9256 /* EMClient.h */,
-				3CA00B1E0EAAAD578D9D71CE32E6CB65 /* EMClient+Call.h */,
-				E075C4D868D74EF0245E332B7DBEA453 /* EMClientDelegate.h */,
-				F44A80503C5DA7A4083CE42ACBA660B0 /* EMCmdMessageBody.h */,
-				0B9A36DC3E3D25883B1691EE12535053 /* EMContactManagerDelegate.h */,
-				5CCCE93BF37FFE6A6C1B3241821B12A3 /* EMConversation.h */,
-				26A713B0447BC189749AB5E79171E973 /* EMCursorResult.h */,
-				E644CDE6A0F1C6D5F5156F85BE811D8E /* EMError.h */,
-				7C06203E5A6D1DBA89E8861A6460AFCF /* EMErrorCode.h */,
-				0BBEDDDFEA59FF41157B8CA9D02056F0 /* EMFileMessageBody.h */,
-				B58C9349412E1868FA8463575F18E61D /* EMGroup.h */,
-				A94BEFDE4FF0FBC26E14E2D132BC546D /* EMGroupManagerDelegate.h */,
-				654D733F4556AE62092306529803FED6 /* EMGroupOptions.h */,
-				EE1C7AF43050DAA0A4A6022C8F631A49 /* EMImageMessageBody.h */,
-				7A04DA7AC3AF593DBD13F1A02B4BD284 /* EMLocationMessageBody.h */,
-				8F8724C135363D012334E6E05418B441 /* EMMessage.h */,
-				FA3AE951F014023B76D9EDFDE04D3DBD /* EMMessageBody.h */,
-				401FA5109F82A60E09444C0EEB305CAD /* EMOptions.h */,
-				B7F929E5073D1998C22B20ED07DC7253 /* EMOptions+PrivateDeploy.h */,
-				DA41F1D8BA22103BA8BF5EA142E5F14E /* EMPushOptions.h */,
-				5A6BE56DF58CB1787D5B995DC1EDE89D /* EMSDK.h */,
-				1B033E6593CAAD72DC2C2F12B45A4E84 /* EMSDKFull.h */,
-				1FCCF5AA52749F7838FBA51B282ED121 /* EMTextMessageBody.h */,
-				B73DFD3F70C6985163D0478A3CEC664F /* EMVideoMessageBody.h */,
-				CD7B041C344EACA1FF015E6F7213B9D1 /* EMVoiceMessageBody.h */,
-				29E021F23FDC202D7EFD0F1F2B70D0C0 /* IEMCallManager.h */,
-				334D760A4848EE1A0C8CFCA21D2AD34E /* IEMChatManager.h */,
-				9F834787268FB584367442E66E393356 /* IEMChatroomManager.h */,
-				EF879C0AE9A0E969A7AE5574FAEF4A1C /* IEMContactManager.h */,
-				D277E02ED778F0CAE51F51D855D785BB /* IEMGroupManager.h */,
-				3FF9DFFA20FC1506B903FDA5D473A067 /* OpenGLView20.h */,
-				80264C35E435385793794118DE975FBC /* Frameworks */,
+				59BEE3845CE23B8CF1CC4351AD1030AC /* Hyphenate_CN */,
 			);
-			path = HyphenateFullSDK;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		3C624391ADFE136D75D922825FCDFF42 /* Pods-EM_testUITests */ = {
@@ -195,12 +157,50 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		4C3F5217804AAA7ED86A8B0B70F04DB2 /* Pods */ = {
+		59BEE3845CE23B8CF1CC4351AD1030AC /* Hyphenate_CN */ = {
 			isa = PBXGroup;
 			children = (
-				296E3FE3F6BBBC8A64F0A6D769F91E6B /* HyphenateFullSDK */,
+				C2C97DD79DD309EF93CA22C054B4D714 /* EMCallLocalView.h */,
+				8E76FDE0117157CBD6F8610A902F3BD6 /* EMCallManagerDelegate.h */,
+				69108B18E4A49375EB4CAA364065CB87 /* EMCallRemoteView.h */,
+				9C1B11281956BCCAECF95A1EFCF9A184 /* EMCallSession.h */,
+				2D2EB5CB62EB11E207E287DECEFC7876 /* EMChatManagerDelegate.h */,
+				E12283C60D17D11C81BE4547CD5A01DE /* EMChatroom.h */,
+				828598CD5453C00DBD039B044617C408 /* EMChatroomManagerDelegate.h */,
+				B38460B90384DBC480A3F46BC6C77733 /* EMClient.h */,
+				A384C576DE1C17CE7C6DFC69DA018D9B /* EMClient+Call.h */,
+				C8426F44B0D34997E8E82BCB5667BF09 /* EMClientDelegate.h */,
+				45009D34C9803C1F22E696F0A3D195E3 /* EMCmdMessageBody.h */,
+				D248D7BE92420B5E704FB7829A66AFBB /* EMContactManagerDelegate.h */,
+				A82EB18B6C97779326BBFA1A50FD94E8 /* EMConversation.h */,
+				02B333D1718DC1EB10B947F9B6EDD037 /* EMCursorResult.h */,
+				1F27529E771A978C844727DADE372A23 /* EMError.h */,
+				0544E9C36C358F3E38997289D3787838 /* EMErrorCode.h */,
+				D770C150C1048F82F7ACEE01C58F80B2 /* EMFileMessageBody.h */,
+				7BBDD74642D9A67088988224B2EDFEB9 /* EMGroup.h */,
+				AF87FF2072A4C81E529BC04109FFA1F5 /* EMGroupManagerDelegate.h */,
+				8B6334C52E18EEC4639D3806F92CF3C3 /* EMGroupOptions.h */,
+				7C5AF8658A7D6841DCC20C7FD9902CB5 /* EMImageMessageBody.h */,
+				CA97533505EA9C21C69AE69DFEE3819D /* EMLocationMessageBody.h */,
+				0CF3D72C61518B6DF522AD6A701E4F0F /* EMMessage.h */,
+				221DA09BDAAD521CEB0D8E299116ED82 /* EMMessageBody.h */,
+				A842B708157A241599260DA1D532FE8F /* EMOptions.h */,
+				68EBE5AEE812B5E73D42EA5381E82DC4 /* EMOptions+PrivateDeploy.h */,
+				9586670018B95A51D7EFBF448AF5DE1D /* EMPushOptions.h */,
+				7127B425153894E7109E608ADEE127D9 /* EMSDK.h */,
+				ABD1481FA63A2E746F7B5492D9C6F903 /* EMSDKFull.h */,
+				8728CBCD3494C7BA26716B9A88BD2834 /* EMTextMessageBody.h */,
+				1F22C79FAE15C214C2AF106A95602CEF /* EMVideoMessageBody.h */,
+				795B8000F7819FC904699907A2D01B7C /* EMVoiceMessageBody.h */,
+				A54F653707D5CB9C6803BC421000BBD5 /* IEMCallManager.h */,
+				4306085BE2A887ADB7F16B02869A6248 /* IEMChatManager.h */,
+				B410DE8399F6BE4C76DC87B7F723A868 /* IEMChatroomManager.h */,
+				992B15C6CD9E580B1B1D1EF8F7ED2FBC /* IEMContactManager.h */,
+				D9661958EB9B3C218EA70B2477AE969A /* IEMGroupManager.h */,
+				4C98B766C62ED933FAE8A5C64627D998 /* OpenGLView20.h */,
+				7B0F7B5C47F6A27A0C2B9A0C152F7A39 /* Frameworks */,
 			);
-			name = Pods;
+			path = Hyphenate_CN;
 			sourceTree = "<group>";
 		};
 		5FFCC34099A532D243EDF14996FA704E /* Pods-EM_test */ = {
@@ -218,23 +218,23 @@
 			path = "Target Support Files/Pods-EM_test";
 			sourceTree = "<group>";
 		};
+		7B0F7B5C47F6A27A0C2B9A0C152F7A39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8899D4156EF2462961CA57E0CF17E8C /* libHyphenateFullSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4C3F5217804AAA7ED86A8B0B70F04DB2 /* Pods */,
+				321347D70A2D6113D2B568B202AE7EEC /* Pods */,
 				BCC918BFDFDC4F97296CE9165EBE62EF /* Products */,
 				E09CC45C89EBCC5D4313CCE5084EFE50 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		80264C35E435385793794118DE975FBC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				628F46F5422C00AB2165058BC493EB06 /* libHyphenateFullSDK.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {

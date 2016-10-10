@@ -6,7 +6,7 @@ target 'EM_test' do
   # use_frameworks!
 
   # Pods for EM_test
-pod 'HyphenateFullSDK', :git => 'https://github.com/easemob/hyphenate-full-cocoapods.git'
+pod 'Hyphenate_CN' , :git => 'https://github.com/easemob/hyphenate-full-cocoapods.git'
 
   target 'EM_testTests' do
     inherit! :search_paths

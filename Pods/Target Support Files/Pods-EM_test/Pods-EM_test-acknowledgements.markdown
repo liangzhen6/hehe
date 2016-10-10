@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## HyphenateFullSDK
+## Hyphenate_CN
 
 Copyright (c) 2016 Hyphenate Inc.
 

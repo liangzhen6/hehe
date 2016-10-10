@@ -1,21 +1,21 @@
 PODS:
-  - HyphenateFullSDK (3.1.5)
+  - Hyphenate_CN (3.1.5.1)
 
 DEPENDENCIES:
-  - HyphenateFullSDK (from `https://github.com/easemob/hyphenate-full-cocoapods.git`)
+  - Hyphenate_CN (from `https://github.com/easemob/hyphenate-full-cocoapods.git`)
 
 EXTERNAL SOURCES:
-  HyphenateFullSDK:
+  Hyphenate_CN:
     :git: https://github.com/easemob/hyphenate-full-cocoapods.git
 
 CHECKOUT OPTIONS:
-  HyphenateFullSDK:
-    :commit: dabc2296bf03377a211450b3f1a813feac27e57d
+  Hyphenate_CN:
+    :commit: ddd442329e267991c7be9f47652b840345f14554
     :git: https://github.com/easemob/hyphenate-full-cocoapods.git
 
 SPEC CHECKSUMS:
-  HyphenateFullSDK: 536f76eeb0914dba766b1d5d30dee083f0805da2
+  Hyphenate_CN: 2db75216631051fb79550fe28d04927a560209a3
 
-PODFILE CHECKSUM: 5e1d90aebf32490f0389e10d1f229b190def2b41
+PODFILE CHECKSUM: dd0f509e8e1c04081d61020072db1140ddaca2fd
 
 COCOAPODS: 1.0.1

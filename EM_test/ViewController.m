@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <UserNotifications/UserNotifications.h>
 #import <EMSDK.h>
 #import "LoginView.h"
 #import "RegisterView.h"
@@ -41,6 +42,43 @@
     
     [self.navigationController pushViewController:add animated:YES];
 
+}
+- (IBAction)pushAction:(id)sender {
+    
+    
+    
+    UNMutableNotificationContent* content = [[UNMutableNotificationContent alloc] init];
+    content.body = @"Hello,world!";
+    content.title = @"通知";
+    content.subtitle = @"text";
+    
+    NSString * imagePath = [[NSBundle mainBundle] pathForResource:@"jump_icon-60" ofType:@"png"];
+    if (imagePath) {//@"imageAttachment"
+        NSError * error = nil;
+        UNNotificationAttachment * imageActionment = [UNNotificationAttachment attachmentWithIdentifier:@"imageAttachment" URL:[NSURL fileURLWithPath:imagePath] options:nil error:&error];
+        if (imageActionment) {
+            //这里attachments虽然是数组但是，但是只会取lastObject
+            content.attachments = @[imageActionment];
+        }
+        
+        
+        
+    }
+    
+    
+    UNTimeIntervalNotificationTrigger* trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:5
+                                                                                                    repeats:NO];
+    NSString* requestIdentifer = @"Request";
+    UNNotificationRequest* request = [UNNotificationRequest requestWithIdentifier:requestIdentifer
+                                                                          content:content
+                                                                          trigger:trigger];
+    [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:request
+                                                           withCompletionHandler:^(NSError * _Nullable error) {
+                                                               NSLog(@"Error%@", error);
+                                                           }];
+
+    
+    
 }
 
 - (void)searchFriends{
