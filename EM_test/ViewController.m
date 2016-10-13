@@ -82,8 +82,9 @@
     UNNotificationAction * actionB = [UNNotificationAction actionWithIdentifier:@"ActionB" title:@"黑色不进去" options:UNNotificationActionOptionDestructive];
     
     UNNotificationAction * actionc = [UNNotificationAction actionWithIdentifier:@"Actionc" title:@"黑色进入" options:UNNotificationActionOptionForeground];
+    UNTextInputNotificationAction * actionD = [UNTextInputNotificationAction actionWithIdentifier:@"ActionD" title:@"写些什么吗" options:UNNotificationActionOptionDestructive textInputButtonTitle:@"send" textInputPlaceholder:@"say some thing"];
     
-    [actionMutableArr addObjectsFromArray:@[actionA,actionB,actionc]];
+    [actionMutableArr addObjectsFromArray:@[actionA,actionB,actionc,actionD]];
     
     if (actionMutableArr.count) {
         UNNotificationCategory * notficationCategory = [UNNotificationCategory categoryWithIdentifier:@"categoryNoOperationAction" actions:actionMutableArr intentIdentifiers:@[@"ActionA",@"ActionB"] options:UNNotificationCategoryOptionCustomDismissAction];

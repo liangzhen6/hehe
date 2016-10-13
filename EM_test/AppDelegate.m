@@ -120,14 +120,23 @@
     
 }
 
+
+
+
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler{
     //在没有启动本App时，收到服务器推送消息，下拉消息会有快捷回复的按钮，点击按钮后调用的方法，根据identifier来判断点击的哪个按钮
     NSString *notMess = [response.notification.request.content.userInfo objectForKey:@"aps"];
     NSLog(@"didReceiveNotificationResponse:%@",response.notification.request.content.title);
     UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"ddd" message:@"ios10后台" delegate:nil cancelButtonTitle:@"yes" otherButtonTitles:nil];
     [alert show];
+    
+    [UIApplication  sharedApplication].applicationIconBadgeNumber = 0;
+    
+//    completionHandler(UNNotificationCategoryOptionCustomDismissAction);
     //    response.notification.request.identifier
 }
+
+
 
 
 #pragma mark 苹果的接受推送的方法 下面的两个都有效，但是苹果建议使用第一个（<ios10版本）  ，因为下面的方法在关闭应用程序时，有推送的时候你点击进入，是不会被调用的，但是前一个可以；你只能通过程序的入口来收到推送来的消息
