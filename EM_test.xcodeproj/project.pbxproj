@@ -13,6 +13,13 @@
 		FA18F9521DAB7D7300639059 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA18F9511DAB7D7300639059 /* UserNotifications.framework */; };
 		FA18F9541DABA17000639059 /* jump_icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = FA18F9531DABA17000639059 /* jump_icon-60.png */; };
 		FA23C2841DAF607200C92B5E /* WhatsApp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FA23C2831DAF607200C92B5E /* WhatsApp.mp4 */; };
+		FA23C28A1DAF746200C92B5E /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA18F9511DAB7D7300639059 /* UserNotifications.framework */; };
+		FA23C28C1DAF746200C92B5E /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA23C28B1DAF746200C92B5E /* UserNotificationsUI.framework */; };
+		FA23C2901DAF746200C92B5E /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA23C28F1DAF746200C92B5E /* NotificationViewController.m */; };
+		FA23C2931DAF746200C92B5E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA23C2911DAF746200C92B5E /* MainInterface.storyboard */; };
+		FA23C2971DAF746200C92B5E /* EMNitificationUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FA23C2891DAF746100C92B5E /* EMNitificationUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FA23C2A41DAF78B300C92B5E /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = FA23C2A31DAF78B300C92B5E /* NotificationService.m */; };
+		FA23C2A81DAF78B300C92B5E /* EMNotificatuin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FA23C2A01DAF78B300C92B5E /* EMNotificatuin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FA2E49781D82593900F9E68F /* FriendsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2E49761D82593900F9E68F /* FriendsTableViewCell.m */; };
 		FA2E49791D82593900F9E68F /* FriendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2E49771D82593900F9E68F /* FriendsTableViewCell.xib */; };
 		FA2E497D1D825B0C00F9E68F /* FriendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2E497C1D825B0C00F9E68F /* FriendsModel.m */; };
@@ -223,6 +230,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FA23C2951DAF746200C92B5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA3A463D1D7D5ADF0015C8AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA23C2881DAF746100C92B5E;
+			remoteInfo = EMNitificationUI;
+		};
+		FA23C2A61DAF78B300C92B5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA3A463D1D7D5ADF0015C8AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA23C29F1DAF78B300C92B5E;
+			remoteInfo = EMNotificatuin;
+		};
 		FA3A465F1D7D5ADF0015C8AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FA3A463D1D7D5ADF0015C8AA /* Project object */;
@@ -239,6 +260,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FA23C29B1DAF746200C92B5E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FA23C2971DAF746200C92B5E /* EMNitificationUI.appex in Embed App Extensions */,
+				FA23C2A81DAF78B300C92B5E /* EMNotificatuin.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		36F9D041791CC682F142902B /* Pods-EM_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EM_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EM_test/Pods-EM_test.debug.xcconfig"; sourceTree = "<group>"; };
 		379521F46B1E60A208FC3C97 /* libPods-EM_testTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EM_testTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -252,6 +288,16 @@
 		FA18F9511DAB7D7300639059 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		FA18F9531DABA17000639059 /* jump_icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jump_icon-60.png"; sourceTree = "<group>"; };
 		FA23C2831DAF607200C92B5E /* WhatsApp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WhatsApp.mp4; sourceTree = "<group>"; };
+		FA23C2891DAF746100C92B5E /* EMNitificationUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EMNitificationUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA23C28B1DAF746200C92B5E /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		FA23C28E1DAF746200C92B5E /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		FA23C28F1DAF746200C92B5E /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		FA23C2921DAF746200C92B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FA23C2941DAF746200C92B5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA23C2A01DAF78B300C92B5E /* EMNotificatuin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EMNotificatuin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA23C2A21DAF78B300C92B5E /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		FA23C2A31DAF78B300C92B5E /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		FA23C2A51DAF78B300C92B5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA2E49751D82593900F9E68F /* FriendsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTableViewCell.h; sourceTree = "<group>"; };
 		FA2E49761D82593900F9E68F /* FriendsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewCell.m; sourceTree = "<group>"; };
 		FA2E49771D82593900F9E68F /* FriendsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsTableViewCell.xib; sourceTree = "<group>"; };
@@ -616,6 +662,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FA23C2861DAF746100C92B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA23C28C1DAF746200C92B5E /* UserNotificationsUI.framework in Frameworks */,
+				FA23C28A1DAF746200C92B5E /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA23C29D1DAF78B300C92B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA3A46421D7D5ADF0015C8AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -653,6 +715,7 @@
 				4B7F24301815FE906654DC9B /* libPods-EM_test.a */,
 				379521F46B1E60A208FC3C97 /* libPods-EM_testTests.a */,
 				A7BA81608B2C0B3070D20547 /* libPods-EM_testUITests.a */,
+				FA23C28B1DAF746200C92B5E /* UserNotificationsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -668,6 +731,27 @@
 				5980360E3F139160717118E2 /* Pods-EM_testUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA23C28D1DAF746200C92B5E /* EMNitificationUI */ = {
+			isa = PBXGroup;
+			children = (
+				FA23C28E1DAF746200C92B5E /* NotificationViewController.h */,
+				FA23C28F1DAF746200C92B5E /* NotificationViewController.m */,
+				FA23C2911DAF746200C92B5E /* MainInterface.storyboard */,
+				FA23C2941DAF746200C92B5E /* Info.plist */,
+			);
+			path = EMNitificationUI;
+			sourceTree = "<group>";
+		};
+		FA23C2A11DAF78B300C92B5E /* EMNotificatuin */ = {
+			isa = PBXGroup;
+			children = (
+				FA23C2A21DAF78B300C92B5E /* NotificationService.h */,
+				FA23C2A31DAF78B300C92B5E /* NotificationService.m */,
+				FA23C2A51DAF78B300C92B5E /* Info.plist */,
+			);
+			path = EMNotificatuin;
 			sourceTree = "<group>";
 		};
 		FA2E49731D8258B200F9E68F /* Friends */ = {
@@ -706,6 +790,8 @@
 				FA3A46471D7D5ADF0015C8AA /* EM_test */,
 				FA3A46611D7D5ADF0015C8AA /* EM_testTests */,
 				FA3A466C1D7D5ADF0015C8AA /* EM_testUITests */,
+				FA23C28D1DAF746200C92B5E /* EMNitificationUI */,
+				FA23C2A11DAF78B300C92B5E /* EMNotificatuin */,
 				FA3A46461D7D5ADF0015C8AA /* Products */,
 				708C028CAB38F08576161B2C /* Pods */,
 				6811C838E461294CE55F2F6D /* Frameworks */,
@@ -718,6 +804,8 @@
 				FA3A46451D7D5ADF0015C8AA /* EM_test.app */,
 				FA3A465E1D7D5ADF0015C8AA /* EM_testTests.xctest */,
 				FA3A46691D7D5ADF0015C8AA /* EM_testUITests.xctest */,
+				FA23C2891DAF746100C92B5E /* EMNitificationUI.appex */,
+				FA23C2A01DAF78B300C92B5E /* EMNotificatuin.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1491,6 +1579,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FA23C2881DAF746100C92B5E /* EMNitificationUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA23C29A1DAF746200C92B5E /* Build configuration list for PBXNativeTarget "EMNitificationUI" */;
+			buildPhases = (
+				FA23C2851DAF746100C92B5E /* Sources */,
+				FA23C2861DAF746100C92B5E /* Frameworks */,
+				FA23C2871DAF746100C92B5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMNitificationUI;
+			productName = EMNitificationUI;
+			productReference = FA23C2891DAF746100C92B5E /* EMNitificationUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FA23C29F1DAF78B300C92B5E /* EMNotificatuin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA23C2A91DAF78B300C92B5E /* Build configuration list for PBXNativeTarget "EMNotificatuin" */;
+			buildPhases = (
+				FA23C29C1DAF78B300C92B5E /* Sources */,
+				FA23C29D1DAF78B300C92B5E /* Frameworks */,
+				FA23C29E1DAF78B300C92B5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMNotificatuin;
+			productName = EMNotificatuin;
+			productReference = FA23C2A01DAF78B300C92B5E /* EMNotificatuin.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		FA3A46441D7D5ADF0015C8AA /* EM_test */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA3A46721D7D5ADF0015C8AA /* Build configuration list for PBXNativeTarget "EM_test" */;
@@ -1501,10 +1623,13 @@
 				FA3A46431D7D5ADF0015C8AA /* Resources */,
 				9D71ADBFC8621E326163EE58 /* [CP] Embed Pods Frameworks */,
 				9E880EC8F4CB2DFE1A788126 /* [CP] Copy Pods Resources */,
+				FA23C29B1DAF746200C92B5E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FA23C2961DAF746200C92B5E /* PBXTargetDependency */,
+				FA23C2A71DAF78B300C92B5E /* PBXTargetDependency */,
 			);
 			name = EM_test;
 			productName = EM_test;
@@ -1561,6 +1686,16 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = shenzhenshihua;
 				TargetAttributes = {
+					FA23C2881DAF746100C92B5E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = G4E6298X77;
+						ProvisioningStyle = Automatic;
+					};
+					FA23C29F1DAF78B300C92B5E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = G4E6298X77;
+						ProvisioningStyle = Automatic;
+					};
 					FA3A46441D7D5ADF0015C8AA = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = G4E6298X77;
@@ -1600,11 +1735,28 @@
 				FA3A46441D7D5ADF0015C8AA /* EM_test */,
 				FA3A465D1D7D5ADF0015C8AA /* EM_testTests */,
 				FA3A46681D7D5ADF0015C8AA /* EM_testUITests */,
+				FA23C2881DAF746100C92B5E /* EMNitificationUI */,
+				FA23C29F1DAF78B300C92B5E /* EMNotificatuin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FA23C2871DAF746100C92B5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA23C2931DAF746200C92B5E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA23C29E1DAF78B300C92B5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA3A46431D7D5ADF0015C8AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1831,6 +1983,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FA23C2851DAF746100C92B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA23C2901DAF746200C92B5E /* NotificationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA23C29C1DAF78B300C92B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA23C2A41DAF78B300C92B5E /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA3A46411D7D5ADF0015C8AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1983,6 +2151,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FA23C2961DAF746200C92B5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA23C2881DAF746100C92B5E /* EMNitificationUI */;
+			targetProxy = FA23C2951DAF746200C92B5E /* PBXContainerItemProxy */;
+		};
+		FA23C2A71DAF78B300C92B5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA23C29F1DAF78B300C92B5E /* EMNotificatuin */;
+			targetProxy = FA23C2A61DAF78B300C92B5E /* PBXContainerItemProxy */;
+		};
 		FA3A46601D7D5ADF0015C8AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FA3A46441D7D5ADF0015C8AA /* EM_test */;
@@ -1996,6 +2174,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FA23C2911DAF746200C92B5E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA23C2921DAF746200C92B5E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		FA3A46511D7D5ADF0015C8AA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -2024,6 +2210,82 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FA23C2981DAF746200C92B5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G4E6298X77;
+				INFOPLIST_FILE = EMNitificationUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SH.EMtest.EMNitificationUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FA23C2991DAF746200C92B5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G4E6298X77;
+				INFOPLIST_FILE = EMNitificationUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SH.EMtest.EMNitificationUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FA23C2AA1DAF78B300C92B5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G4E6298X77;
+				INFOPLIST_FILE = EMNotificatuin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SH.EMtest.EMNotificatuin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FA23C2AB1DAF78B300C92B5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G4E6298X77;
+				INFOPLIST_FILE = EMNotificatuin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SH.EMtest.EMNotificatuin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		FA3A46701D7D5ADF0015C8AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2217,6 +2479,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FA23C29A1DAF746200C92B5E /* Build configuration list for PBXNativeTarget "EMNitificationUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA23C2981DAF746200C92B5E /* Debug */,
+				FA23C2991DAF746200C92B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA23C2A91DAF78B300C92B5E /* Build configuration list for PBXNativeTarget "EMNotificatuin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA23C2AA1DAF78B300C92B5E /* Debug */,
+				FA23C2AB1DAF78B300C92B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		FA3A46401D7D5ADF0015C8AA /* Build configuration list for PBXProject "EM_test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
