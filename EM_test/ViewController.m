@@ -51,20 +51,50 @@
     content.body = @"Hello,world!";
     content.title = @"通知";
     content.subtitle = @"text";
+
+    content.badge = @1;
+    /*
+     NSString * imagePath = [[NSBundle mainBundle] pathForResource:@"jump_icon-60" ofType:@"png"];
+     if (imagePath) {//@"imageAttachment"
+     NSError * error = nil;
+     UNNotificationAttachment * imageActionment = [UNNotificationAttachment attachmentWithIdentifier:@"imageAttachment" URL:[NSURL fileURLWithPath:imagePath] options:nil error:&error];
+     if (imageActionment) {
+     //这里attachments虽然是数组但是，但是只会取lastObject
+     content.attachments = @[imageActionment];
+     }
+     
+     }*/
     
-    NSString * imagePath = [[NSBundle mainBundle] pathForResource:@"jump_icon-60" ofType:@"png"];
-    if (imagePath) {//@"imageAttachment"
+    NSString *videoPatch = [[NSBundle mainBundle] pathForResource:@"WhatsApp" ofType:@".mp4"];
+    if (videoPatch) {
         NSError * error = nil;
-        UNNotificationAttachment * imageActionment = [UNNotificationAttachment attachmentWithIdentifier:@"imageAttachment" URL:[NSURL fileURLWithPath:imagePath] options:nil error:&error];
-        if (imageActionment) {
-            //这里attachments虽然是数组但是，但是只会取lastObject
-            content.attachments = @[imageActionment];
+        
+        UNNotificationAttachment * videoActtachment = [UNNotificationAttachment attachmentWithIdentifier:@"videoAttachment4" URL:[NSURL fileURLWithPath:videoPatch] options:nil error:&error];
+        if (videoActtachment) {
+            content.attachments = @[videoActtachment];
         }
         
+    }
+    
+    NSMutableArray *actionMutableArr = [[NSMutableArray alloc] initWithCapacity:1];
+    UNNotificationAction * actionA  =[UNNotificationAction actionWithIdentifier:@"ActionA" title:@"红色不进入" options:UNNotificationActionOptionAuthenticationRequired];
+    
+    UNNotificationAction * actionB = [UNNotificationAction actionWithIdentifier:@"ActionB" title:@"黑色不进去" options:UNNotificationActionOptionDestructive];
+    
+    UNNotificationAction * actionc = [UNNotificationAction actionWithIdentifier:@"Actionc" title:@"黑色进入" options:UNNotificationActionOptionForeground];
+    
+    [actionMutableArr addObjectsFromArray:@[actionA,actionB,actionc]];
+    
+    if (actionMutableArr.count) {
+        UNNotificationCategory * notficationCategory = [UNNotificationCategory categoryWithIdentifier:@"categoryNoOperationAction" actions:actionMutableArr intentIdentifiers:@[@"ActionA",@"ActionB"] options:UNNotificationCategoryOptionCustomDismissAction];
+        
+        [[UNUserNotificationCenter currentNotificationCenter] setNotificationCategories:[NSSet setWithObject:notficationCategory]];
+        content.categoryIdentifier = @"categoryNoOperationAction";
         
         
     }
     
+
     
     UNTimeIntervalNotificationTrigger* trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:5
                                                                                                     repeats:NO];

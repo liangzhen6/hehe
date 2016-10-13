@@ -12,6 +12,7 @@
 		C287CF73EE18F28248C3896B /* libPods-EM_testTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 379521F46B1E60A208FC3C97 /* libPods-EM_testTests.a */; };
 		FA18F9521DAB7D7300639059 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA18F9511DAB7D7300639059 /* UserNotifications.framework */; };
 		FA18F9541DABA17000639059 /* jump_icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = FA18F9531DABA17000639059 /* jump_icon-60.png */; };
+		FA23C2841DAF607200C92B5E /* WhatsApp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FA23C2831DAF607200C92B5E /* WhatsApp.mp4 */; };
 		FA2E49781D82593900F9E68F /* FriendsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2E49761D82593900F9E68F /* FriendsTableViewCell.m */; };
 		FA2E49791D82593900F9E68F /* FriendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2E49771D82593900F9E68F /* FriendsTableViewCell.xib */; };
 		FA2E497D1D825B0C00F9E68F /* FriendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2E497C1D825B0C00F9E68F /* FriendsModel.m */; };
@@ -250,6 +251,7 @@
 		E56DC5F6AB946A534EFA4770 /* Pods-EM_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EM_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-EM_test/Pods-EM_test.release.xcconfig"; sourceTree = "<group>"; };
 		FA18F9511DAB7D7300639059 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		FA18F9531DABA17000639059 /* jump_icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jump_icon-60.png"; sourceTree = "<group>"; };
+		FA23C2831DAF607200C92B5E /* WhatsApp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WhatsApp.mp4; sourceTree = "<group>"; };
 		FA2E49751D82593900F9E68F /* FriendsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTableViewCell.h; sourceTree = "<group>"; };
 		FA2E49761D82593900F9E68F /* FriendsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewCell.m; sourceTree = "<group>"; };
 		FA2E49771D82593900F9E68F /* FriendsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsTableViewCell.xib; sourceTree = "<group>"; };
@@ -739,6 +741,7 @@
 				FA3A46541D7D5ADF0015C8AA /* Assets.xcassets */,
 				FA3A46561D7D5ADF0015C8AA /* LaunchScreen.storyboard */,
 				FA3A46591D7D5ADF0015C8AA /* Info.plist */,
+				FA23C2831DAF607200C92B5E /* WhatsApp.mp4 */,
 				FA18F9531DABA17000639059 /* jump_icon-60.png */,
 				FA3A46481D7D5ADF0015C8AA /* Supporting Files */,
 			);
@@ -1684,6 +1687,7 @@
 				FAFCB4A51D88FCFB00D6BCDF /* VoiceSearchFeedback007@2x.png in Resources */,
 				FAFCB4991D88FCFB00D6BCDF /* chat_receiver_audio_playing000@2x.png in Resources */,
 				FAFCB4B71D88FCFB00D6BCDF /* chat_sender_audio_playing_full@2x.png in Resources */,
+				FA23C2841DAF607200C92B5E /* WhatsApp.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
