@@ -143,8 +143,7 @@
  
  {"aps":{"alert":"This is some fancy message.","badge":10,"sound": "default","mutable-content":"1","category":"4921" },"image":"https://homeba.s3.amazonaws.com/__sized__/scene/2c0f3bdb7715fed7190fd87e5e5340e4-1473387950-crop-c0-5__0-5-590x442-85.jpg","type":"scene","id":"1007"}
  
- *
-/
+ */
 
 
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler{

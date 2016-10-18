@@ -20,16 +20,25 @@
 - (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
     self.contentHandler = contentHandler;
     self.bestAttemptContent = [request.content mutableCopy];
-//    
-//    NSMutableArray *actionMutableArr = [[NSMutableArray alloc] initWithCapacity:1];
-//    UNNotificationAction * actionA  =[UNNotificationAction actionWithIdentifier:@"ActionA" title:@"红色不进入" options:UNNotificationActionOptionAuthenticationRequired];
-//    
-//    UNNotificationAction * actionB = [UNNotificationAction actionWithIdentifier:@"ActionB" title:@"黑色不进去" options:UNNotificationActionOptionDestructive];
-//    
-//    UNNotificationAction * actionc = [UNNotificationAction actionWithIdentifier:@"Actionc" title:@"黑色进入" options:UNNotificationActionOptionForeground];
-//    UNTextInputNotificationAction * actionD = [UNTextInputNotificationAction actionWithIdentifier:@"ActionD" title:@"写些什么吗" options:UNNotificationActionOptionDestructive textInputButtonTitle:@"send" textInputPlaceholder:@"say some thing"];
-//    
-//    [actionMutableArr addObjectsFromArray:@[actionA,actionB,actionc,actionD]];
+    
+    NSMutableArray *actionMutableArr = [[NSMutableArray alloc] initWithCapacity:1];
+    UNNotificationAction * actionA  =[UNNotificationAction actionWithIdentifier:@"ActionA" title:@"红色不进入" options:UNNotificationActionOptionAuthenticationRequired];
+    
+    UNNotificationAction * actionB = [UNNotificationAction actionWithIdentifier:@"ActionB" title:@"黑色不进去" options:UNNotificationActionOptionDestructive];
+    
+    UNNotificationAction * actionc = [UNNotificationAction actionWithIdentifier:@"Actionc" title:@"黑色进入" options:UNNotificationActionOptionForeground];
+    UNTextInputNotificationAction * actionD = [UNTextInputNotificationAction actionWithIdentifier:@"ActionD" title:@"写些什么吗" options:UNNotificationActionOptionDestructive textInputButtonTitle:@"send" textInputPlaceholder:@"say some thing"];
+    
+    [actionMutableArr addObjectsFromArray:@[actionA,actionB,actionc,actionD]];
+
+    if (actionMutableArr.count) {
+        UNNotificationCategory * notficationCategory = [UNNotificationCategory categoryWithIdentifier:@"categoryNoOperationAction" actions:actionMutableArr intentIdentifiers:@[@"ActionA",@"ActionB"] options:UNNotificationCategoryOptionCustomDismissAction];
+        
+        [[UNUserNotificationCenter currentNotificationCenter] setNotificationCategories:[NSSet setWithObject:notficationCategory]];
+        self.bestAttemptContent.categoryIdentifier = @"categoryNoOperationAction";
+        
+        
+    }
 
     
     // Modify the notification content here...
