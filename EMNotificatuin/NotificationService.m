@@ -43,7 +43,7 @@
     
     // Modify the notification content here...
     self.bestAttemptContent.title = [NSString stringWithFormat:@"点击查看更多内容"];
-    
+   /*
     NSString * attchUrl = [request.content.userInfo objectForKey:@"image"];
     //下载图片,放到本地
     UIImage * imageFromUrl = [self getImageFromURL:attchUrl];
@@ -55,6 +55,7 @@
     NSString * localPath = [self saveImage:imageFromUrl withFileName:@"MyImage" ofType:@"png" inDirectory:documentsDirectoryPath];
     if (localPath && ![localPath isEqualToString:@""]) {
         UNNotificationAttachment * attachment = [UNNotificationAttachment attachmentWithIdentifier:@"photo" URL:[NSURL URLWithString:[@"file://" stringByAppendingString:localPath]] options:nil error:nil];
+
         if (attachment) {
 //            [actionMutableArr addObject:attachment];
             self.bestAttemptContent.attachments = @[attachment];
@@ -64,10 +65,27 @@
     
     
     
+    self.contentHandler(self.bestAttemptContent);*/
+    NSDictionary *dict =  self.bestAttemptContent.userInfo;
+//    NSDictionary *notiDict = dict[@"aps"];
+    NSString *imgUrl = [NSString stringWithFormat:@"%@",dict[@"image"]];
+    NSLog(@"%@",imgUrl);
+    if (!imgUrl.length) {
+        self.contentHandler(self.bestAttemptContent);
+    }
     
-    self.contentHandler(self.bestAttemptContent);
+    [self loadAttachmentForUrlString:imgUrl withType:@"image" completionHandle:^(UNNotificationAttachment *attach) {
+        
+        if (attach) {
+            self.bestAttemptContent.attachments = [NSArray arrayWithObject:attach];
+        }
+        self.contentHandler(self.bestAttemptContent);
+        
+    }];
+    
+    
 }
-
+/*
 - (UIImage *) getImageFromURL:(NSString *)fileURL {
     NSLog(@"执行图片下载函数");
     UIImage * result;
@@ -97,6 +115,49 @@
     }
     return urlStr;
     
+}
+*/
+
+- (void)loadAttachmentForUrlString:(NSString *)urlStr
+                          withType:(NSString *)type
+                  completionHandle:(void(^)(UNNotificationAttachment *attach))completionHandler{
+    __block UNNotificationAttachment *attachment = nil;
+    NSURL *attachmentURL = [NSURL URLWithString:urlStr];
+    NSString *fileExt = [self fileExtensionForMediaType:type];
+    
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    [[session downloadTaskWithURL:attachmentURL
+                completionHandler:^(NSURL *temporaryFileLocation, NSURLResponse *response, NSError *error) {
+                    if (error != nil) {
+                        NSLog(@"%@", error.localizedDescription);
+                    } else {
+                        NSFileManager *fileManager = [NSFileManager defaultManager];
+                        NSURL *localURL = [NSURL fileURLWithPath:[temporaryFileLocation.path stringByAppendingString:fileExt]];
+                        [fileManager moveItemAtURL:temporaryFileLocation toURL:localURL error:&error];
+                        
+                        NSError *attachmentError = nil;
+                        attachment = [UNNotificationAttachment attachmentWithIdentifier:@"" URL:localURL options:nil error:&attachmentError];
+                        if (attachmentError) {
+                            NSLog(@"%@", attachmentError.localizedDescription);
+                        }
+                    }
+                    completionHandler(attachment);
+                }] resume];
+    
+}
+
+- (NSString *)fileExtensionForMediaType:(NSString *)type {
+    NSString *ext = type;
+    if ([type isEqualToString:@"image"]) {
+        ext = @"jpg";
+    }
+    if ([type isEqualToString:@"video"]) {
+        ext = @"mp4";
+    }
+    if ([type isEqualToString:@"audio"]) {
+        ext = @"mp3";
+    }
+    return [@"." stringByAppendingString:ext];
 }
 
 - (void)serviceExtensionTimeWillExpire {

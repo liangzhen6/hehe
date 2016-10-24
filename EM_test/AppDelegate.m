@@ -117,7 +117,11 @@
     
     UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"ddd" message:@"ios10前台" delegate:nil cancelButtonTitle:@"yes" otherButtonTitles:nil];
     [alert show];
-    
+    // 需要执行这个方法，选择是否提醒用户，有Badge、Sound、Alert三种类型可以设置
+    completionHandler(UNNotificationPresentationOptionBadge|
+                      UNNotificationPresentationOptionSound|
+                      UNNotificationPresentationOptionAlert);
+
 }
 
 /*
@@ -143,6 +147,8 @@
  
  {"aps":{"alert":"This is some fancy message.","badge":10,"sound": "default","mutable-content":"1","category":"4921" },"image":"https://homeba.s3.amazonaws.com/__sized__/scene/2c0f3bdb7715fed7190fd87e5e5340e4-1473387950-crop-c0-5__0-5-590x442-85.jpg","type":"scene","id":"1007"}
  
+ https://www.fotor.com/images2/features/photo_effects/e_bw.jpg
+ 
  */
 
 
@@ -155,6 +161,7 @@
     
     [UIApplication  sharedApplication].applicationIconBadgeNumber = 0;
     
+    completionHandler();
 //    completionHandler(UNNotificationCategoryOptionCustomDismissAction);
     //    response.notification.request.identifier
 }
@@ -165,11 +172,16 @@
 #pragma mark 苹果的接受推送的方法 下面的两个都有效，但是苹果建议使用第一个（<ios10版本）  ，因为下面的方法在关闭应用程序时，有推送的时候你点击进入，是不会被调用的，但是前一个可以；你只能通过程序的入口来收到推送来的消息
 
 //远程推送APP在前台  或者是在后台再次返回前台 或者重新进入程序
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary * _Nonnull)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
     NSLog(@"didReceiveRemoteNotification:%@",userInfo);
     UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"ddd" message:@"前台" delegate:nil cancelButtonTitle:@"yes" otherButtonTitles:nil];
     [alert show];
+    
+    completionHandler(UIBackgroundFetchResultNewData);
+    
 }
+
+
 
 /**
  ios7以前

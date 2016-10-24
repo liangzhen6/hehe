@@ -321,6 +321,7 @@
 		FA3A46691D7D5ADF0015C8AA /* EM_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EM_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3A466D1D7D5ADF0015C8AA /* EM_testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EM_testUITests.m; sourceTree = "<group>"; };
 		FA3A466F1D7D5ADF0015C8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA883BD31DB7448A00D78E71 /* EMNotificatuin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EMNotificatuin.entitlements; sourceTree = "<group>"; };
 		FABB3D3F1D7FF18C00D97797 /* TWOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWOViewController.h; sourceTree = "<group>"; };
 		FABB3D401D7FF18C00D97797 /* TWOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWOViewController.m; sourceTree = "<group>"; };
 		FABB3D421D7FF19D00D97797 /* THTEEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTEEViewController.h; sourceTree = "<group>"; };
@@ -747,6 +748,7 @@
 		FA23C2A11DAF78B300C92B5E /* EMNotificatuin */ = {
 			isa = PBXGroup;
 			children = (
+				FA883BD31DB7448A00D78E71 /* EMNotificatuin.entitlements */,
 				FA23C2A21DAF78B300C92B5E /* NotificationService.h */,
 				FA23C2A31DAF78B300C92B5E /* NotificationService.m */,
 				FA23C2A51DAF78B300C92B5E /* Info.plist */,
@@ -1695,6 +1697,17 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = G4E6298X77;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					FA3A46441D7D5ADF0015C8AA = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -2486,6 +2499,7 @@
 				FA23C2991DAF746200C92B5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA23C2A91DAF78B300C92B5E /* Build configuration list for PBXNativeTarget "EMNotificatuin" */ = {
 			isa = XCConfigurationList;
@@ -2494,6 +2508,7 @@
 				FA23C2AB1DAF78B300C92B5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA3A46401D7D5ADF0015C8AA /* Build configuration list for PBXProject "EM_test" */ = {
 			isa = XCConfigurationList;
