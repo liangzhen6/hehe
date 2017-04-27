@@ -33,6 +33,11 @@
 
     [[EaseSDKHelper shareHelper] easemobApplication:application didFinishLaunchingWithOptions:launchOptions appkey:appKey apnsCertName:apnsCert otherConfig:@{kSDKConfigEnableConsoleLogger:[NSNumber numberWithBool:YES]}];
     
+    
+    
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"ddd" message:@"ios10退出" delegate:nil cancelButtonTitle:@"yes" otherButtonTitles:nil];
+    [alert show];
+    
     NSLog(@"%f",IOS_VERSION);
     if (IOS_VERSION >= 10.0) {
         UNUserNotificationCenter * center = [UNUserNotificationCenter currentNotificationCenter];
@@ -54,13 +59,15 @@
         UIUserNotificationTypeAlert;
         UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:notificationTypes categories:nil];
         [application registerUserNotificationSettings:settings];
-    }else{//ios8一下
-        UIRemoteNotificationType notificationTypes = UIRemoteNotificationTypeBadge |
-        UIRemoteNotificationTypeSound |
-        UIRemoteNotificationTypeAlert;
-        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:notificationTypes];
-    
     }
+    
+//    else{//ios8一下
+//        UIRemoteNotificationType notificationTypes = UIRemoteNotificationTypeBadge |
+//        UIRemoteNotificationTypeSound |
+//        UIRemoteNotificationTypeAlert;
+//        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:notificationTypes];
+//    
+//    }
 //    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"ddd" message:@"是你哈哈哈前台" delegate:nil cancelButtonTitle:@"yes" otherButtonTitles:nil];
 //    [alert show];
 
@@ -107,6 +114,15 @@
 
 //在前台
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler{
+    
+    
+    
+    // 需要执行这个方法，选择是否提醒用户，有Badge、Sound、Alert三种类型可以设置
+    completionHandler(UNNotificationPresentationOptionBadge|
+                      UNNotificationPresentationOptionSound|
+                      UNNotificationPresentationOptionAlert);
+    
+    
     NSLog(@"willPresentNotification:%@",notification.request.content.title);
     
     // 这里真实需要处理交互的地方
@@ -141,6 +157,13 @@
  }
  }
  }
+ 
+ {"aps":{"alert":"\\u3010\u7279\u9996\u9078\u8209\u3011\u53cd\u99c1\u300c\u5b32\u5b32\u4e0a\u5230\u500b\u9f3b\u300d\u3000\u6797\u912d\uff1a\u9999\u6e2f\u9664\u4e86\u7db2\u6c11\u9084\u6709\u5176\u4ed6\u4eba (16:45)","badge":0,"sound":"default","mutable-content":"1"},"urlProduct":"ins","urlEdition":"web_tc","urlPage":"article","urlDocIssue":"20170316","urlDocSection":"s00001","urlNodeID":"1489649871749","media":{"type":"image","url":"https://www.fotor.com/images2/features/photo_effects/e_bw.jpg"}}
+ 
+ 
+ 
+ 
+ {"aps":{"alert":"\\u4e00\\u6b3e\\u6e1b\\u80a5\\u85e5\\u542b\\u672a\\u6a19\\u793a\\u6bd2\\u85e5\\u3000\\u885b\\u751f\\u7f72\\u7c72\\u52ff\\u670d\\u7528 (14:48)","badge":0,"sound":"default","mutable-content":"1"},"urlProduct":"ins","urlEdition":"web_tc","urlPage":"article","urlDocIssue":"20170207","urlDocSection":"s00001","urlNodeID":"1486448517384","image":"https://homeba.s3.amazonaws.com/__sized__/scene/2c0f3bdb7715fed7190fd87e5e5340e4-1473387950-crop-c0-5__0-5-590x442-85.jpg"}
  
  
  

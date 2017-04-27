@@ -37,6 +37,8 @@
     
 }
 
+
+
 - (void)showAddFriendsView{
     AddFriendsViewController * add = [[AddFriendsViewController alloc] init];
     

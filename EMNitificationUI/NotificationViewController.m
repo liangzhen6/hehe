@@ -35,7 +35,8 @@
     UNNotificationContent * content = notification.request.content;
     UNNotificationAttachment * attachment = content.attachments.firstObject;
     if (attachment.URL.startAccessingSecurityScopedResource) {
-        self.imageView.image = [UIImage imageWithContentsOfFile:attachment.URL.path];
+//        self.imageView.image = [UIImage imageWithContentsOfFile:attachment.URL.path];
+        self.imageView.image = [UIImage imageWithData:[content.userInfo objectForKey:@"image"]];
     }
     
 }

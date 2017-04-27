@@ -30,7 +30,7 @@
     UNTextInputNotificationAction * actionD = [UNTextInputNotificationAction actionWithIdentifier:@"ActionD" title:@"写些什么吗" options:UNNotificationActionOptionDestructive textInputButtonTitle:@"send" textInputPlaceholder:@"say some thing"];
     
     [actionMutableArr addObjectsFromArray:@[actionA,actionB,actionc,actionD]];
-
+    
     if (actionMutableArr.count) {
         UNNotificationCategory * notficationCategory = [UNNotificationCategory categoryWithIdentifier:@"categoryNoOperationAction" actions:actionMutableArr intentIdentifiers:@[@"ActionA",@"ActionB"] options:UNNotificationCategoryOptionCustomDismissAction];
         
@@ -39,7 +39,7 @@
         
         
     }
-
+    
     
     // Modify the notification content here...
     self.bestAttemptContent.title = [NSString stringWithFormat:@"点击查看更多内容"];
@@ -63,18 +63,20 @@
     }
     
     
+     {"aps":{"alert":"\\u4e00\\u6b3e\\u6e1b\\u80a5\\u85e5\\u542b\\u672a\\u6a19\\u793a\\u6bd2\\u85e5\\u3000\\u885b\\u751f\\u7f72\\u7c72\\u52ff\\u670d\\u7528 (14:48)","badge":0,"sound":"default","mutable-content":"1"},"urlProduct":"ins","urlEdition":"web_tc","urlPage":"article","urlDocIssue":"20170207","urlDocSection":"s00001","urlNodeID":"1486448517384","media":{"type":"video","url":"https://framework.realtime.co/blog/img/ios10-video.mp4"}}
+   
     
     
     self.contentHandler(self.bestAttemptContent);*/
     NSDictionary *dict =  self.bestAttemptContent.userInfo;
 //    NSDictionary *notiDict = dict[@"aps"];
-    NSString *imgUrl = [NSString stringWithFormat:@"%@",dict[@"image"]];
+    NSString *imgUrl = [NSString stringWithFormat:@"%@",dict[@"media"][@"url"]];
     NSLog(@"%@",imgUrl);
     if (!imgUrl.length) {
         self.contentHandler(self.bestAttemptContent);
     }
     
-    [self loadAttachmentForUrlString:imgUrl withType:@"image" completionHandle:^(UNNotificationAttachment *attach) {
+    [self loadAttachmentForUrlString:imgUrl withType:dict[@"media"][@"type"] completionHandle:^(UNNotificationAttachment *attach) {
         
         if (attach) {
             self.bestAttemptContent.attachments = [NSArray arrayWithObject:attach];
@@ -131,12 +133,18 @@
                     if (error != nil) {
                         NSLog(@"%@", error.localizedDescription);
                     } else {
+//                        NSData * data = [NSData dataWithContentsOfURL:temporaryFileLocation];
+//                        NSDictionary * dict = @{@"image":data};
+//                        self.bestAttemptContent.userInfo = dict;
                         NSFileManager *fileManager = [NSFileManager defaultManager];
                         NSURL *localURL = [NSURL fileURLWithPath:[temporaryFileLocation.path stringByAppendingString:fileExt]];
                         [fileManager moveItemAtURL:temporaryFileLocation toURL:localURL error:&error];
+
                         
                         NSError *attachmentError = nil;
+                       
                         attachment = [UNNotificationAttachment attachmentWithIdentifier:@"" URL:localURL options:nil error:&attachmentError];
+                        
                         if (attachmentError) {
                             NSLog(@"%@", attachmentError.localizedDescription);
                         }
