@@ -12,6 +12,7 @@
 #import "LoginView.h"
 #import "RegisterView.h"
 #import "AddFriendsViewController.h"
+
 @interface ViewController ()<EMClientDelegate,UIAlertViewDelegate,EMContactManagerDelegate,EMChatManagerDelegate>
 @property(nonatomic,copy)NSString *friends;
 
@@ -32,6 +33,7 @@
 //    item.style =UIBarButtonSystemItemAdd;
     
     self.navigationItem.rightBarButtonItem = item;
+    
     
     [self searchFriends];
     
